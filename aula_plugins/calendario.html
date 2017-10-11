@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/calendar.css" />
+	<script src="./js/jquery.min.js"></script>
+	
+	<script src="./js/calendar-plugin.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./js/message-plugin.css"/>
+
+	<script src="./js/message-plugin.js"></script>
+
+	<script>
+
+		$(function(){
+			var evento = {id:1
+				, nome: "Evento XPTO"
+				, data: "2017-10-09"
+				, horario_inicio: "10:15"
+				, horario_fim: "11:30"
+				, tipo: "palestra"};
+
+				var evento2 = {id:2
+						, nome: "Palestra ABC"
+						, data: "2017-10-09"
+						, horario_inicio: "8:10"
+						, horario_fim: "9:10"
+						, tipo: "palestra"};
+
+				var evento3 = {id:3
+						, nome: "Curso de Arduíno"
+						, data: "2017-10-09"
+						, horario_inicio: "11:40"
+						, horario_fim: "12:10"
+						, tipo: "minicurso"};
+				var evento4 = {id:4
+						, nome: "Curso de jQuery"
+						, data: "2017-10-09"
+						, horario_inicio: "13:00"
+						, horario_fim: "13:40"
+						, tipo: "minicurso"};
+			var eventoArray = [evento, evento2, evento3, evento4];
+			
+			var opcoes = {qtdLinhas: 6
+						, horaInicial: 8
+						, eventoArray: eventoArray};
+			var dataArray = evento.data.split("-"); 
+			console.log(new Date(dataArray[0],(dataArray[1]-1),dataArray[2]));
+			$(".calendar").calendar(opcoes);
+
+			$("button").click(function(){
+				
+
+				//qtdLinhas, horaInicial, eventoArray;
+
+				
+/*
+				$(".message").message({message: "Xablau",class:"danger"});
+*/
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<div class="calendar"></div>
+	<div class="message"></div>
+	<button>Fazer aparecer o plugin!</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

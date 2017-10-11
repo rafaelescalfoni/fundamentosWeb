@@ -1,0 +1,69 @@
+.calendar{
+	width: 500px;
+
+}
+.calendar-date{
+	width: 400px;
+	float: right;
+	background-color: rgb(68, 189, 263);
+	color: #fff;
+	border: #aaa solid 1px;
+	text-align: center;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.calendar-body{
+	clear: right;
+	position: relative;
+} 
+.calendar-line{
+	border: #aaf solid 1px;
+	height: 60px;
+}
+.calendar-time {
+	height: inherit;
+	width: 100px;
+	border: #aaa solid 1px;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.calendar-grid {
+	width: 400px;
+	float: right;
+}
+
+.calendar-event {
+	position: absolute;
+	top: 0;
+	left: 120px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	vertical-align: middle;
+	width: 130px;
+}
+
+.palestra {
+	border: #333 solid 1px;
+	background-color: rgba(68, 189, 263, 0.5);
+	color:#fff;
+}
+
+.minicurso {
+	border: #333 solid 1px;
+	background-color: rgba(168, 89, 63, 0.5);
+	color:#fff;	
+}
+
+#evento_1 {
+	height: 75px;
+	top: 15px;
+}
+
+
+
+
+
+
+
